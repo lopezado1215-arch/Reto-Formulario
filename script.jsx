@@ -16,7 +16,8 @@ function Formulario() {
         
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(datos);
+        console.log('Datos eviados:', datos);
+        alert(`Formulario enviado. Gracias, ${datos.nombre}.`);
     }
     return (
         <form onSubmit={handleSubmit}>
